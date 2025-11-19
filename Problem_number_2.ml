@@ -12,4 +12,6 @@ let even_Fibo_sum n =
     else even_Fibo_sum_aux acc2 (acc1+acc2) acc3
   in even_Fibo_sum_aux 1 1 0
 
-let() = Printf.printf"%d \n"(even_Fibo_sum 4000000)
+let() = 
+  let result = even_Fibo_sum 4000000 in
+  Printf.printf "The sum of the even-valued terms in the Fibonacci sequence whose values do not exceed four million is: %d\n" result

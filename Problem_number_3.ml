@@ -18,4 +18,6 @@ let largest_prime_factor n =
     else largest_prime_factor_aux (i+1) current_largest
   in largest_prime_factor_aux 2 0
 
-let() = Printf.printf"%d \n"(largest_prime_factor 600851475143)
+let() =
+  let result = largest_prime_factor 600851475143 in
+  Printf.printf "The largest prime factor of 600851475143 is: %d\n" result

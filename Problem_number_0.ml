@@ -11,4 +11,7 @@ let sum_square n =
     else sum_square_aux (i+2) (acc  + i*i)
   in sum_square_aux 1 0
 
-let () = Printf.printf "%s \n" (string_of_int (sum_square 881000))
+let () = 
+  let limit = int_of_float (sqrt (float_of_int 881000)) in
+  let result = sum_square limit in
+  Printf.printf "The sum of all the odd squares among the first 881 thousand square numbers is: %d\n" result

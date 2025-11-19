@@ -10,4 +10,6 @@ let sum_mul_three_five n =
     else sum_mul_tree_five_aux (i+1) (acc)
   in sum_mul_tree_five_aux 0 0
 
-let () = Printf.printf "%s \n" (string_of_int (sum_mul_three_five 1000))
+let () = 
+  let result = sum_mul_three_five 1000 in
+  Printf.printf "The sum of all the multiples of 3 or 5 below 1000 is: %d\n" result
