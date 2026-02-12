@@ -1,19 +1,43 @@
-Ce projet contient des solutions aux problèmes Project Euler en OCaml.
+# Project Euler Solutions in OCaml
 
-projecteuler.net est une plateforme proposant des problèmes mathématiques et informatiques de difficulté croissante.
-L’objectif est de développer des solutions efficaces et élégantes en programmation pour résoudre ces problèmes.
+This project contains my solutions to various **Project Euler** problems, implemented in **OCaml**.
 
-Chaque fichier .ml de ce projet correspond à la solution d’un problème spécifique.
+[ProjectEuler.net](https://projecteuler.net) is a platform that offers mathematical and computational problems of increasing difficulty. The goal is to develop efficient and elegant algorithms to solve these challenges.
 
-Tous les fichiers .ml sont dans le dossier racine.
-Le projet utilise Dune pour compiler et exécuter les programmes.
-Le script build_and_run.sh permet de compiler et exécuter tous les fichiers automatiquement.
+## Project Structure
 
-Pour compiler et exécuter tout le projet il vous faut OCaml et Dune installés sur votre machine.
+- Each `.ml` file corresponds to the solution of a specific Project Euler problem.
+- All `.ml` files are located in the root directory.
+- The project uses **Dune** as the build system.
+- The `build_and_run.sh` script allows you to automatically compile and execute all solution files.
 
-Ouvrir le terminal dans le dossier du projet et vérifier que le script build_and_run.sh soit exécutable.
-Vous pouvez le faire en utilisant : chmod +x build_and_run.sh
+## Requirements
 
-Pour lancer le script : ./build_and_run.sh
-Vous verrez ainsi les solutions des problèmes dans le terminal.
-Pour voir l'énoncé d'un problème, vous pouvez regarder le commentaire en tête de chaque fichier ou depuis le site officiel.
+To compile and run this project, you need:
+
+- **OCaml**
+- **Dune**
+
+Make sure both are installed and properly configured on your machine.
+
+## How to Build and Run
+
+1. Open a terminal in the project directory.
+2. Ensure the script is executable:
+
+```bash
+chmod +x build_and_run.sh
+```
+
+3. Run the script:
+
+```
+./build_and_run.sh
+```
+The solutions will be compiled and executed automatically, and the results will be displayed in the terminal.
+
+## Problem Statements
+
+To view the description of a specific problem:
+- Check the comment at the top of the corresponding .ml file, or
+- Visit the official Project Euler website: [ProjectEuler.net](https://projecteuler.net)
